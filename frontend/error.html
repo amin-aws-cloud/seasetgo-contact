@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found | SeaSetGo</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        color: #333;
+      }
+
+      .error-container {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        padding: 60px 40px;
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+        animation: fadeIn 0.6s ease-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .error-icon {
+        font-size: 8rem;
+        margin-bottom: 20px;
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .error-code {
+        font-size: 6rem;
+        font-weight: 700;
+        color: #0066cc;
+        margin-bottom: 10px;
+        line-height: 1;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: #666;
+        line-height: 1.7;
+        margin-bottom: 30px;
+      }
+
+      .btn-home {
+        display: inline-block;
+        padding: 15px 40px;
+        background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+      }
+
+      .btn-home:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
+      }
+
+      .suggestions {
+        margin-top: 40px;
+        padding-top: 30px;
+        border-top: 2px solid #f0f0f0;
+      }
+
+      .suggestions h2 {
+        font-size: 1.3rem;
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      .suggestions ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .suggestions li {
+        font-size: 1rem;
+        color: #666;
+        margin: 10px 0;
+        padding: 10px;
+        background: #f9f9f9;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .suggestions li:hover {
+        background: #f0f0f0;
+        transform: translateX(5px);
+      }
+
+      .logo {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #0066cc;
+      }
+
+      @media (max-width: 768px) {
+        .error-container {
+          padding: 40px 30px;
+        }
+
+        .error-icon {
+          font-size: 5rem;
+        }
+
+        .error-code {
+          font-size: 4rem;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        .btn-home {
+          padding: 12px 30px;
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .error-code {
+          font-size: 3rem;
+        }
+
+        h1 {
+          font-size: 1.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-container">
+      <div class="logo">🌍 SeaSetGo</div>
+      <div class="error-icon">🧭</div>
+      <div class="error-code">404</div>
+      <h1>Oops! You've Wandered Off the Map</h1>
+      <p>
+        The page you're looking for seems to have taken an unexpected detour.
+        Don't worry—even the best travelers get lost sometimes!
+      </p>
+      <a href="/index.html" class="btn-home">Return Home</a>
+
+      <div class="suggestions">
+        <h2>What you can do:</h2>
+        <ul>
+          <li>📍 Check the URL for typos</li>
+          <li>🏠 Go back to the homepage</li>
+          <li>🔍 Use your browser's back button</li>
+          <li>📧 Contact us if you think this is an error</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
