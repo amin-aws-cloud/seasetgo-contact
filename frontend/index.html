@@ -1,0 +1,116 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact SeaSetGo - Plan Your Perfect Journey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <header class="header">
+        <h1>🌍 SeaSetGo</h1>
+        <p class="tagline">Your Journey Begins Here</p>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="intro-section">
+          <h2>Get in Touch</h2>
+          <p>
+            Ready to explore the world? Fill out the form below and our travel
+            specialists will create a personalized itinerary just for you.
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              required=""
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="john@example.com"
+              required=""
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell Us About Your Dream Trip *</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="I'm interested in a 7-day trip to Bali for 2 people. We love beaches, culture, and great food!"
+              rows="6"
+              required=""
+            ></textarea>
+            <span class="char-count"
+              ><span id="charCount">0</span> characters</span
+            >
+          </div>
+
+          <button type="submit" class="submit-btn" id="submitBtn">
+            <span class="btn-text">Send My Inquiry</span>
+            <span class="btn-loader" style="display: none">
+              <span class="spinner"></span> Sending...
+            </span>
+          </button>
+        </form>
+
+        <!-- Success Message -->
+        <div
+          id="successMessage"
+          class="message success-message"
+          style="display: none"
+        >
+          <div class="message-icon">✅</div>
+          <h3>Thank You!</h3>
+          <p>Your inquiry has been submitted successfully!</p>
+          <div class="reference-box">
+            <strong>Reference Number:</strong>
+            <span id="refNumber" class="ref-number"></span>
+          </div>
+          <p class="small-text">
+            We'll respond within 24 hours. Check your email for confirmation.
+          </p>
+          <button class="btn-secondary" onclick="resetForm()">
+            Send Another Inquiry
+          </button>
+        </div>
+
+        <!-- Error Message -->
+        <div
+          id="errorMessage"
+          class="message error-message"
+          style="display: none"
+        >
+          <div class="message-icon">❌</div>
+          <h3>Oops! Something Went Wrong</h3>
+          <p id="errorText">We couldn't send your message. Please try again.</p>
+          <button class="btn-secondary" onclick="hideError()">Try Again</button>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>© 2026 SeaSetGo. Making travel dreams come true. ✈️</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
