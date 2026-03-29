@@ -1,0 +1,19 @@
+cd lambda
+touch .gitignore
+```
+
+**Add to `.gitignore`:**
+```
+# Dependencies
+node_modules/
+
+# Deployment package
+function.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
